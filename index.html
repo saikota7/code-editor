@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Live Code Editor</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/f619680409.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="editor">
+        <label><i class="fa-brands fa-html5 html"></i>HTML</label>
+        <textarea id="html-code" oninput="run()"></textarea>
+
+        <label><i class="fa-brands fa-css3-alt css"></i>CSS</label>
+        <textarea id="css-code" oninput="run()"></textarea>
+
+        <label><i class="fa-brands fa-js js"></i>JavaScript</label>
+        <textarea id="js-code" oninput="run()"></textarea>
+      </div>
+      <div class="resizer"></div>
+      <div class="output">
+        <label><i class="fa-solid fa-play output-icon"></i>Output</label>
+        <iframe id="output" title="Output"></iframe>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
